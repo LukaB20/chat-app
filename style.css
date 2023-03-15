@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 10rem;
+}
+
+.title{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    margin-bottom: 2rem;
+}
+
+.name-details{
+    display: flex;
+    gap: 2rem
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.field label{
+    text-align: center;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.field input{
+    padding: 0.3rem;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 5px;
+}
+
+.field input:focus{
+    outline: none;
+}
+
+.link a {
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+}
+
+.link a:hover{
+    text-decoration: underline;
+}
+
+.field input[type='submit']{
+    background-color: rgb(58, 58, 58);
+    color: #ccc;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.error-txt{
+    background-color: rgb(251, 234, 234);
+    border: 1px solid rgb(255, 141, 141);
+    color: red;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.success-txt{
+    background-color: rgb(207, 253, 207);
+    border: 1px solid rgb(90, 172, 90);
+    color: green;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.success-txt a{
+    color: green;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+/*Profile style*/
+
+.wrapper-profile{
+    background-color: white;
+    display: flex;
+    margin-top: 3rem;
+    height: 600px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profile{
+    width: 400px;
+    background-color: white;
+    border-right: 1px solid rgb(181, 181, 181);
+}
+
+.profile header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgb(181, 181, 181);
+    padding: 1rem;
+}
+
+.profile header div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile form input{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.profile-image{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.friends{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    overflow: auto;
+}
+
+.friend{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.friend:hover{
+    background-color: rgb(244, 244, 244);
+}
+
+.last-msg{
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.user-name{
+    font-weight: bold;
+}
+
+.chat{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgb(181, 181, 181);
+}
+
+.messages{
+    width: 100%;
+    height: 500px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow: auto;
+}
+
+.chat form{
+    padding: 0.5rem 0.5rem;
+}
+
+.chat form input[type='text']{
+    border: 1px solid rgb(134, 134, 134);
+    width: 85%;
+    border-radius: 5px;
+    padding: 0rem 0.5rem;
+}
+
+.chat form input[type='submit']{
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 5px;
+    background-color: white;
+    padding: 0rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chat form input[type='submit']:hover{
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 5px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 0rem 0.5rem;
+    cursor: pointer;
+}
+
+.chat header i{
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.msg{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 0.5rem;
+    width: 40%;
+    overflow-wrap: break-word;
+    border-radius: 5px;
+}
+
+.user-msg{
+    align-self: flex-end;
+    background-color: rgb(58, 58, 206);
+    margin-right: 1rem;
+}
+
+.toggleAddFriend{
+    margin-top: 0.85rem;
+    padding: 0.5rem 1rem;
+    width: 50%;
+    cursor: pointer;
+    margin-left: 5rem;
+    text-align: center;
+    border: 2px solid black;
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.toggleAddFriend:hover{
+    background-color: lightgray;
+}
+
+#newFriendName{
+    margin: 0.5rem;
+    margin-top: 1.4rem;
+    width: 94.5%;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.suggestedFriend{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.suggestions{
+    margin-top: 0.5rem;
+    height: 539px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.suggestions form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#addFriendDiv{
+    display: none;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 0.5rem;
+    align-items: center;
+}
+
+.suggestedFriend{
+    margin-bottom: 0.5rem;
+}
+
+.flex-row button{
+    height: 70%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0rem 0.5rem;
+}
+
+.flex-row button:hover{
+    background-color: black;
+    color: white;
+}
+
+/*End of profile style*/
